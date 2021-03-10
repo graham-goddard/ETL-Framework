@@ -1,0 +1,77 @@
+<PACKAGE>=etl
+<VERSION>=01.14.0000
+
+#
+# Change History
+#
+#
+# 01.01.0000 - Initial Build
+# 01.02.0000 - Added @rtrim parameter
+# 01.03.0000 - Added @filecount and @recordcount output parameters
+# 01.04.0000 - Added drop script
+# 01.05.0000 - Fixed file extenstion chk on import procs
+# 01.06.0000 - Added support for duplicate colnames in text files
+# 01.07.0000 - Added support for named ranges in Excel
+# 01.08.0000 - Added support for importing mixed filetypes from single folder
+#              Replaced @fileextentions with @filemask in ap_ImportFiles
+#              Added @overridetable in ap_ImportFiles
+#              Suppressed resultset output from fileIO operations
+#              Added datatype casting support for all char types in fn_GetCastString
+#              Added checks for string truncation in ap_GenericPopulate
+# 01.09.0000 - Changed text to memo for support of > 255 chars
+# 01.10.0000 - Expanded archive option to move or replace
+#              Suppressed resultset output from fileIO operations in ap_ImportExcel
+#              Support for sheets with space in name in ap_ImportExcel
+# 01.11.0000 - Added paramter for text/memo - default to text (faster)
+# 01.12.0000 - Expanded truncatestaging paramter to none/when file found/always
+# 01.13.0000 - Fixed etl.MergeCounts.View.sql
+# 01.14.0000 - Added etl.fnMergeCounts.Function.sql
+#
+
+#
+# Drop any existing objects
+#
+
+\etl.drop.Script.sql
+
+#
+# Schema
+#
+
+\etl.createschema.sql
+
+#
+# Tables
+#
+
+\etl.log.Table.sql
+
+#
+# Functions
+#
+
+\etl.fn_GetCastString.Function.sql
+\etl.FileCopy.Function.sql
+\etl.FileDelete.Function.sql
+\etl.FileDeleteMatch.Function.sql
+\etl.FileMove.Function.sql
+\etl.FileReplace.Function.sql
+\etl.fn_MergeCounts.Function.sql
+
+#
+# Stored Procedures
+#
+
+\etl.ap_WriteStringToFile.StoredProcedure.sql
+\etl.ap_InsertETLlog.StoredProcedure.sql
+\etl.ap_GenericPopulate.StoredProcedure.sql
+\etl.ap_GetFirstRowFromFile.StoredProcedure.sql
+\etl.ap_ImportFiles.StoredProcedure.sql
+\etl.ap_ImportExcel.StoredProcedure.sql
+\etl.ap_GetMaxColumnLengths.StoredProcedure.sql
+
+#
+# Views
+#
+
+\etl.MergeCounts.View.sql

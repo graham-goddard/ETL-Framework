@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 14.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{E57D0813-0707-4CE1-BCC7-0481EAFF0078}"
+	ProjectSection(SolutionItems) = preProject
+		etl.ap_CheckForNulls.StoredProcedure.sql = etl.ap_CheckForNulls.StoredProcedure.sql
+		etl.ap_GenericPopulate.StoredProcedure.sql = etl.ap_GenericPopulate.StoredProcedure.sql
+		etl.ap_GetFirstRowFromFile.StoredProcedure.sql = etl.ap_GetFirstRowFromFile.StoredProcedure.sql
+		etl.ap_GetMaxColumnLengths.StoredProcedure.sql = etl.ap_GetMaxColumnLengths.StoredProcedure.sql
+		etl.ap_ImportExcel.StoredProcedure.sql = etl.ap_ImportExcel.StoredProcedure.sql
+		etl.ap_ImportFiles.StoredProcedure.sql = etl.ap_ImportFiles.StoredProcedure.sql
+		etl.ap_InsertETLlog.StoredProcedure.sql = etl.ap_InsertETLlog.StoredProcedure.sql
+		etl.ap_WriteStringToFile.StoredProcedure.sql = etl.ap_WriteStringToFile.StoredProcedure.sql
+		etl.createschema.sql = etl.createschema.sql
+		etl.drop.Script.sql = etl.drop.Script.sql
+		etl.FileCopy.Function.sql = etl.FileCopy.Function.sql
+		etl.FileDelete.Function.sql = etl.FileDelete.Function.sql
+		etl.FileDeleteMatch.Function.sql = etl.FileDeleteMatch.Function.sql
+		etl.FileMove.Function.sql = etl.FileMove.Function.sql
+		etl.FileReplace.Function.sql = etl.FileReplace.Function.sql
+		etl.fn_GetCastString.Function.sql = etl.fn_GetCastString.Function.sql
+		etl.fn_MergeCounts.Function.sql = etl.fn_MergeCounts.Function.sql
+		etl.log.Table.sql = etl.log.Table.sql
+		etl.MergeCounts.View.sql = etl.MergeCounts.View.sql
+		etl.sql = etl.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{BCED7DAB-0287-45BA-9F55-2E55FF4A7495}"
+	ProjectSection(SolutionItems) = preProject
+		args.txt = args.txt
+		BUILD.cmd = BUILD.cmd
+		GetSourceFile.cmd = GetSourceFile.cmd
+		makefile.txt = makefile.txt
+		SQLpackage.cmd = SQLpackage.cmd
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE19B773-6C0B-4BD3-8E1F-D429873D57E3}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
